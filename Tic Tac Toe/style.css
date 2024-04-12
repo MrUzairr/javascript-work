@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1C1678;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8vmin;
+  }
+  .heading {
+    color: transparent; /* Set text color to transparent */
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 40px;
+    -webkit-text-fill-color: #FFF7FC; /* Set text fill color */
+    -webkit-text-stroke-width: 2px; /* Set stroke width */
+    -webkit-text-stroke-color: #FFF7FC; /* Set stroke color */
+  }
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #7BC9FF;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .fade-in {
+    animation: fadeInAnimation 1s ease-in-out forwards;
+    padding: 30px;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      background-color: transparent; /* Initial background color */
+    }
+    50% {
+      background-color: yellow; /* Change to yellow halfway through */
+    }
+    100% {
+      opacity: 1;
+      background-color: transparent; /* Back to transparent at the end */
+    }
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #8576FF;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #8576FF;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  #msg {
+    color: #A3FFD6;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
